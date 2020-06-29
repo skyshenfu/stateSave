@@ -17,6 +17,11 @@ import android.widget.TextView;
 
 import java.util.Random;
 
+/**
+ * adb shell ps -A |grep com.zty.statetest  查询pid
+ * adb shell  kill $pid
+ * 注意 直接安装adb debug包可能导致状态保存无效，请移除进程后再次开app
+ */
 public class MainActivity extends AppCompatActivity {
     //SavedStateProvider的Key
     public static final String STATE_BUNDLE_KEY="STATE_BUNDLE_KEY";
